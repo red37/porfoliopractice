@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<title>Learning JavaScript</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+#circle{
+	width:200px;
+	height:200px;
+	border-radius: 100px;
+	background-color: blue
+
+}
+</style>
+
+</head>
+
+<body>
+
+<button id="but1">Click Me Snitch </button>
+<div id="div1">This text is legen that wait for it....</div>
+
+
+
+<button id="but2"> Append text</button>
+<p id="text1"> Some more text bitch!</p>
+
+<button id="but3"> List outta nowhere </button>
+<div id="div2"></div>
+
+<br>
+<button id="but4"> Make Red dissapear </button>
+<button id="but5"> Make Red reappear </button>
+<div id ="red1"> <img src ="https://metrouk2.files.wordpress.com/2016/04/red-horse-dot-m_2778460a.jpg" /> </div>
+
+
+<button id="but9">Click Me Snitch </button>
+<div id="circle"></div>
+<script type ="text/javascript">
+/* This is a song about somebody else
+		alert(document.getElementById("text1").innerHTML="Dont Worry yourself");
+
+
+		document.getElementById("but2").onclick =function(){
+			alert("Well hello Mothafucka!")
+		}
+*/
+
+document.getElementById("but1").onclick=function(){
+	document.getElementById("div1").innerHTML =" Dary.legendary"
+}
+
+document.getElementById("but2").onclick=function(){
+	document.getElementById("text1").innerHTML= document.getElementById("text1").innerHTML + "Go soil yourself";
+	}		
+
+document.getElementById("but3").onclick=function(){
+	document.getElementById("div2").innerHTML="<ul> <li> Dogma </li> <li> Catsup</li></ul>";
+}
+		
+
+
+document.getElementById("but4").onclick=function(){
+	document.getElementById("red1").innerHTML="";
+}
+
+
+
+document.getElementById("but9").onclick=function(){
+	document.getElementById("circle").style.display="none"
+}
+</script>
+
+</body>
+</html>	

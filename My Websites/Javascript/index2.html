@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<title>Learning JavaScript</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+#circle{
+	width:200px;
+	height:200px;
+	border-radius: 100px;
+	background-color: blue
+
+}
+</style>
+
+</head>
+
+<body>
+<input id ="myInput" type="text" value="testS" />
+<button id="but1">Click Me Snitch </button>
+<div id="cir1"> text change</div>
+<div id="cir2"> Change is comming</div>
+<button id="but2">Click Me  </button>
+<script type ="text/javascript">
+
+var myArray=new Array();
+myArray[0]="pizza";
+myArray[1]="jizz";
+
+
+
+var newtext = document.getElementById("myInput").value;
+
+
+document.getElementById("but1").onclick=function(){
+	newtext = document.getElementById("myInput").value;
+
+	document.getElementById("cir1").innerHTML= newtext;
+}
+console.log(myArray);
+document.getElementById("but2").onclick=function(){
+
+	document.getElementById("cir2").innerHTML= myArray[1];
+}
+</script>
+
+</body>
+</html>	

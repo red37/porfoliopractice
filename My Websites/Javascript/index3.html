@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<title>Learning JavaScript</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+<p> how many fingers?</p>
+<input id="finger" />
+<button id ="but1"> Submit</button>
+
+<script type="text/javascript">
+	document.getElementById("but1").onclick=function(){
+	var x = (Math.random()*6);
+	x= Math.floor(x);
+	
+	var y =	document.getElementById("finger").value
+	
+
+	if(y==x){
+		alert("correct guess");
+	}
+	else{
+		alert("incorrect guess");
+	}
+}
+</script>
+</body>
+</html>	
